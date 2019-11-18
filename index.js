@@ -4,7 +4,11 @@ var base = new Airtable({apiKey: AIRTABLE_API_KEY}).base('appP0xGQjxYDqFQSk');
 
 const express = require('express')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 8080
+
+app.get('/', (req, res) => {
+  res.send("Welcome to the CincyHacks2020 registration station!")
+})
 
 app.get('/register', (req, res) => {
     data = req.query.array
@@ -40,5 +44,4 @@ app.get('/register', (req, res) => {
     res.send(data)
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
-
+app.listen(port, () => console.log(`Now listening for registrations on port ${port}.`))
