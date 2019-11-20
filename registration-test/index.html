@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+    </head>
+    <body>
+        <script src="register.js"></script> 
+        <form id="form">
+            First name*: <input type="text" id="FirstName" required><br>
+            Last name*: <input type="text" id="LastName" required><br>
+            Preferred name*: <input type="text" id="PreferredName" required><br>
+            Email*: <input type="text" id="Email" required><br>
+            Confirm email*: <input type="text" id="CheckEmail" required><br>
+            Phone number*: <input type="text" id="PhoneNumber" required><br>
+            School*: <input type="text" id="School" required><br>
+            Grade*:  <select type="text" id="Grade" required>
+                        <option value="9">9th Grade</option>
+                        <option value="10">10th Grade</option>
+                        <option value="11">11th Grade</option>
+                        <option value="12">12th Grade</option>
+                    </select><br>
+            Age*: <input type="text" id="Age" required><br>
+            Emergency Contact Email*: <input type="text" id="EEmail" required><br>
+            Emergency Contact Phone Number*: <input type="text" id="EPhoneNumber" required><br>
+            Pronouns*:  <select type="text" id="Pronouns" required>
+                        <option value="he/him/his">he/him/his</option>
+                        <option value="she/her/hers">she/her/hers</option>
+                        <option value="they/them/theirs">they/them/theirs</option>
+                        <option value="Other">Other</option>
+                        <option value="Prefer not to answer">Prefer not to answer</option>
+                    </select><br>
+            Shirt Size*:  <select type="text" id="ShirtSize" required>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="2XL">2XL</option>
+                        <option value="3XL">3XL</option>
+                    </select><br>
+            Dietary restrictions: <input type="text" id="DietaryRestrictions"><br>
+            How did you hear about the event?*: <input type="text" id="Referral" required><br>
+            Other: <input type="text" id="Other"><br>
+            <input type="button" onclick="register()" value="Submit">
+    </form>
+    </body>
+</html>
